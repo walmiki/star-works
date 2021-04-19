@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Petrona:wght@300;400;500;600;900&display=swap");
+body {
+  background-color: #f5f5f5;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.home__section {
+  background-image: url("/assets/images/pexels-pixabay-531880.jpg");
+  height: 102vh;
+}
+.home__section .home_container {
+  padding: 1rem 4.1rem 0 4.1rem;
+}
+.home__section ul {
+  list-style: none;
+  display: flex;
+  margin-top: 34px;
+  margin-bottom: 0;
+  margin-left: -120px;
+}
+.home__section ul li {
+  padding-right: 39px;
+}
+.home__section ul a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+}
+.home__section .cta {
+  z-index: 1000;
+  margin-top: 25px;
+}
+.home__section .cta .cta_btn {
+  background-color: #2ea44f;
+  box-shadow: 0 20px 20px 0 rgba(0, 2, 51, 0.3);
+  color: #fff;
+  padding: 4px 17px 6px;
+  border-radius: 71px;
+}
+.home__section .home__banner {
+  margin: 15%;
+  padding: 1rem 4.1rem 0 4.1rem;
+}
+.home__section .home__banner h1 {
+  font-size: 68px;
+  color: #fff;
+  width: 631px;
+  line-height: 1.1;
+  font-family: "Petrona", serif;
+}
+.home__section .home__banner p {
+  color: white;
+  font-size: 1.2rem;
+}
+.home__section .home__banner button {
+  background: #fed049;
+  box-shadow: 0 0px 20px 0 rgba(255, 255, 255, 0.1);
+  color: #020024;
+  outline: none;
+  padding: 4px 17px 6px;
+  border-radius: 71px;
+}
+
+.profile_img {
+  margin: 2% -2% 10% 2%;
+}
+.profile_img img {
+  height: 50%;
+  width: 95%;
+  padding: 10px 100px;
+}
+
+.motive {
+  margin: 100px;
+}
+.motive h2 {
+  color: #1b1b85;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.motive ul {
+  font-size: 1.5rem;
+  margin: 40px 365px;
+}
+
+.about_us {
+  margin: 50px -50px 50px 100px;
+}
+.about_us .aboutDescLeft {
+  display: inline-block;
+  margin: 0 200px 0 0;
+  font-size: 1.3rem;
+}
+.about_us .aboutImgLeft {
+  border-style: solid;
+  border-color: #000;
+  border-radius: 5px;
+  float: left;
+  height: 300px;
+  max-width: 50%;
+  margin: 0 70px 70px 100px;
+}
+.about_us .aboutDescRight {
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 200px 0 100px;
+}
+.about_us .aboutImgRight {
+  border-style: solid;
+  border-color: #000;
+  border-radius: 5px;
+  float: right;
+  height: 300px;
+  max-width: 50%;
+  margin: 0 40px 100px 70px;
+}
+
+.footer__section {
+  background: #020024;
+  background: linear-gradient(170deg, #020024 0%, #090979 95%, #090979 100%);
+  padding: 25px 62px;
+  color: #fff;
+}
+.footer__section ul li {
+  list-style: none;
+}
+.footer__section ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__section h4 {
+  font-size: 22px;
+}
+.footer__section .q__links {
+  padding-top: 37px;
+  padding-left: 75px;
+}
+.footer__section .q__links ul {
+  margin-left: -38px;
+}
+.footer__section .cont_of {
+  padding-top: 37px;
+}
+.footer__section .cont_of li p {
+  margin-bottom: 0;
+}
+.footer__section .cont_of ul {
+  margin-left: -38px;
+}
+
+/*# sourceMappingURL=about.css.map */
