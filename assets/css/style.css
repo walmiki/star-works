@@ -19,6 +19,13 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+.active {
+  color: #000 !important;
+  background-color: #43ce6b;
+  border-radius: 40px;
+  padding: 0.5rem 1.2rem;
+}
+
 .navbar-brand img {
   width: 200px;
   object-fit: contain;
@@ -32,19 +39,31 @@ body {
   padding-right: 1.5rem;
 }
 .nav__menu_dt .navbar-nav .nav-link {
-  color: #fff !important;
+  color: #fff;
   font-size: 1.1rem !important;
+  padding: 0.5rem 1.2rem;
 }
+.nav__menu_dt .navbar-nav .nav-link:hover {
+  color: #000 !important;
+  border-radius: 40px;
+  background-color: #43ce6b;
+}
+
 #navbarSupportedContent {
   justify-content: flex-end;
 }
 
 .cta .cta_btn {
-  background-color: #2ea44f;
+  background-color: #fed049;
   box-shadow: 0 20px 20px 0 rgba(0, 2, 51, 0.3);
-  color: #fff !important;
+  color: #000 !important;
   padding: 6px 17px 6px !important;
   border-radius: 71px;
+}
+.cta .cta_btn:hover {
+  color: #fff !important;
+  background-color: #fed049 !important;
+  opacity: 0.75;
 }
 
 .home__section {
@@ -94,6 +113,9 @@ body {
   padding: 4px 17px 6px;
   border-radius: 71px;
 }
+.home__section .home__banner img {
+  border-radius: 10px;
+}
 
 .about__section .about__sectionContent {
   background-color: rgba(196, 196, 196, 0.17);
@@ -110,6 +132,10 @@ body {
 .about__section .about__sectionContent .about_para {
   display: flex;
   justify-content: center;
+}
+.about__section .about__sectionContent .about_para span {
+  color: transparent;
+  text-shadow: 0 0 black;
 }
 .about__section .about__sectionContent p {
   color: #000;
@@ -355,10 +381,12 @@ form .middleInput {
   font-size: 1.2rem;
 }
 .contact_section .contact_div .form_div .btn {
+  color: #000 !important;
+  border-color: #fed049;
   width: 100%;
   padding: 0.7rem;
   margin-top: 1rem;
-  background: #0d1ad1;
+  background: #fed049;
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -384,6 +412,165 @@ form .middleInput {
 .features__section .bd_bottom {
   border-bottom: 2.5px solid #0d1ad1;
   width: 15%;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav__menu_dt {
+    padding: 0;
+  }
+  .nav__menu_dt img {
+    height: auto;
+    width: 150px;
+    margin-left: 10px;
+  }
+  .nav__menu_dt .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1rem !important;
+    padding: 15px !important;
+    margin-left: 1rem;
+    font-weight: 600;
+  }
+  .nav__menu_dt .navbar-nav .nav-link:hover {
+    color: #17b124 !important;
+    background-color: transparent;
+  }
+  .nav__menu_dt .cta .cta_btn {
+    color: #fff !important;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 1rem !important;
+    padding: 15px !important;
+    margin-left: 1rem;
+  }
+
+  .form__background {
+    background-color: #160f5a;
+    border: solid gray;
+  }
+
+  .home__section {
+    height: 70vh;
+    border-bottom-left-radius: 20% 5%;
+    border-bottom-right-radius: 20% 5%;
+  }
+  .home__section .home__banner {
+    padding: 1rem 2.1rem 0;
+  }
+  .home__section .home__banner h1 {
+    font-size: 1.5rem;
+    width: 300px;
+    margin: 50px 0 0;
+  }
+  .home__section .home__banner img {
+    height: auto;
+    width: 185px;
+    margin: 10px 0 0 125px;
+    visibility: hidden;
+  }
+  .home__section .home__banner .col-lg-8 {
+    position: static;
+    padding: 10px 30px 0 0;
+  }
+
+  .about__section .about__sectionContent {
+    padding: 30px 15px;
+  }
+  .about__section .about__sectionContent .row {
+    margin: 0 !important;
+  }
+  .about__section .about__sectionContent .row .col-lg-4 {
+    padding: 0 !important;
+  }
+  .about__section .about__sectionContent .row .card_review {
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 65px;
+  }
+  .about__section .about__sectionContent h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 30px;
+  }
+  .about__section .about__sectionContent p {
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .whychooseus {
+    padding: 1.2rem;
+  }
+  .whychooseus h4 {
+    font-size: 2rem;
+  }
+  .whychooseus p {
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .whychooseus svg {
+    height: 235px;
+    width: 330px;
+    margin-top: 30px;
+  }
+
+  .features__section {
+    padding: 1.2rem;
+  }
+
+  .col-lg-3 {
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .contact_section .contact_div {
+    margin: 20px auto;
+  }
+  .contact_section .contact_div .faq_div h3 {
+    font-size: 2rem;
+  }
+  .contact_section .contact_div .faq_div .card {
+    font-size: 1.3rem;
+  }
+  .contact_section .contact_div .faq_div .card .card-header .btn-link {
+    font-size: 1.1rem;
+    padding: 3px 0;
+    margin-right: 30px;
+    white-space: normal !important;
+    text-align: left;
+  }
+  .contact_section .contact_div .faq_div .card .card-body {
+    font-size: 1.1rem;
+    text-align: left;
+    border-bottom: solid #d8e3e7 !important;
+  }
+  .contact_section .contact_div .form_div {
+    padding: 2rem 3rem;
+  }
+  .contact_section .contact_div .form_div h3 {
+    font-size: 2rem;
+  }
+  .contact_section .contact_div .form_div .btn {
+    font-size: 1.1rem;
+    width: 40%;
+  }
+
+  .footer__section {
+    padding: 20px;
+  }
+  .footer__section .footer__logo svg {
+    width: 140px;
+  }
+  .footer__section h4 {
+    font-size: 1.3rem;
+  }
+  .footer__section .q__links,
+.footer__section .cont_of {
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
