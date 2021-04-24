@@ -4,9 +4,15 @@ body {
   overflow-x: hidden;
 }
 
-.nave__div {
+header {
   position: absolute;
+  z-index: 1;
+}
+
+.nave__div {
+  position: fixed;
   width: 100%;
+  top: 0;
 }
 
 .navbar {
@@ -22,7 +28,7 @@ body {
 .active {
   color: #000 !important;
   background-color: #43ce6b;
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 0.5rem 1.2rem;
 }
 
@@ -64,6 +70,26 @@ body {
   color: #fff !important;
   background-color: #fed049 !important;
   opacity: 0.75;
+}
+
+.sticky .nav__menu_dt {
+  transition: 400ms;
+  background: #020024;
+  background: linear-gradient(170deg, #020024 0%, #090979 95%, #090979 100%);
+}
+.sticky .nav__menu_dt ul li {
+  transition: 400ms;
+}
+.sticky .nav__menu_dt .navbar-nav {
+  padding-top: 0 !important;
+}
+.sticky .nav__menu_dt .navbar-nav .nav-link {
+  font-size: 0.9rem !important;
+  transition: 400ms;
+}
+.sticky .nav__menu_dt .navbar-brand img {
+  width: 180px;
+  transition: 400ms;
 }
 
 .home__section {
@@ -256,78 +282,6 @@ body {
   padding: 50px 10px 100px 80px;
 }
 
-form h4 {
-  font-size: 39px;
-  font-weight: 600;
-  margin: 0 0 20px 0;
-}
-form .inputArea {
-  font-size: 18px;
-  padding: 10px 20px;
-  margin: 0 0 5px 0;
-  border-style: solid;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px 0 rgba(0, 2, 51, 0.1);
-}
-form .submitBtn {
-  background-color: #08086c;
-  margin: 5px 185px 0 0;
-  font-size: 1.1rem;
-  color: #fff;
-}
-form .middleInput {
-  padding-top: 11px;
-  padding-bottom: 11px;
-}
-
-.FAQ {
-  display: inline-flex;
-  flex-direction: column;
-  border: none;
-}
-.FAQ .faqText {
-  background-color: #ddd;
-  color: #000;
-  border-radius: 10px;
-  font-size: 1.15rem;
-  font-weight: 600;
-  padding: 20px;
-  text-decoration: none;
-  width: 100%;
-  border: inherit;
-  border-color: #000;
-}
-.FAQ .faqText:hover {
-  color: #0d1ad1;
-}
-.FAQ .faqText .faqSpanText {
-  font-size: 0.95rem;
-  color: #524f4f;
-}
-.FAQ .btn:hover {
-  text-decoration: none;
-}
-.FAQ h4 {
-  font-size: 36px;
-  font-weight: 600;
-  padding: 15px;
-}
-.FAQ .card-header {
-  margin: 0 0 -15px;
-  padding: 0.25rem 0;
-  background-color: #f5f5f5;
-}
-
-.whyUs {
-  background-color: #f5f5f5;
-  padding: 3rem 4rem 5rem;
-}
-.whyUs .whyus_container h3 {
-  font-size: 3rem;
-  font-weight: 600;
-  text-align: center;
-}
-
 .contact_section {
   background-color: #f5f5f5;
   padding: 3rem 0 5rem;
@@ -391,7 +345,19 @@ form .middleInput {
   font-weight: 400;
 }
 .contact_section .contact_div .form_div .btn:hover {
-  opacity: 0.9;
+  color: #000;
+  background-color: #c7a84d;
+}
+.contact_section .contact_div .form_div .successMsg {
+  background-color: #007a3d !important;
+  border-radius: 5px;
+  padding: 0.5em;
+  display: none;
+}
+.contact_section .contact_div .form_div .successMsg p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+  color: #fff;
 }
 
 .features__section {
@@ -416,12 +382,13 @@ form .middleInput {
 
 @media only screen and (max-width: 900px) {
   .nav__menu_dt {
-    padding: 0;
+    padding: 0 10px 0 12px;
   }
   .nav__menu_dt img {
     height: auto;
-    width: 150px;
-    margin-left: 10px;
+    width: 125px;
+    margin-left: 5px;
+    padding-top: 5px;
   }
   .nav__menu_dt .navbar-nav .nav-link {
     color: #fff;
@@ -435,13 +402,25 @@ form .middleInput {
     background-color: transparent;
   }
   .nav__menu_dt .cta .cta_btn {
-    color: #fff !important;
+    color: #fed049 !important;
     background-color: transparent;
     box-shadow: none;
     border-radius: 0;
     font-size: 1rem !important;
     padding: 15px !important;
     margin-left: 1rem;
+  }
+
+  .sticky .nav__menu_dt .navbar-brand img {
+    width: 130px;
+    padding-bottom: 0.5rem;
+  }
+
+  .active {
+    color: #43ce6b !important;
+    background-color: transparent !important;
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem;
   }
 
   .form__background {

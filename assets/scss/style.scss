@@ -3,9 +3,15 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
-.nave__div {
+
+header{
   position: absolute;
+  z-index: 1;
+}
+.nave__div {
+  position: fixed;
   width: 100%;
+  top: 0;
 }
 .navbar {
   padding-left: 0 !important;
@@ -19,7 +25,7 @@ body {
 .active {
   color: #000 !important;
   background-color: #43ce6b;
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 0.5rem 1.2rem;
 }
 
@@ -49,7 +55,6 @@ body {
 #navbarSupportedContent {
   justify-content: flex-end;
 }
-
 .cta {
   .cta_btn {
     background-color: #fed049;
@@ -64,6 +69,36 @@ body {
     }
   }
 }
+
+// Sticky Nav
+.sticky {
+  .nav__menu_dt {
+    transition: 400ms;
+    background: rgb(2, 0, 36);
+  background: linear-gradient(
+    170deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 95%,
+    rgba(9, 9, 121, 1) 100%
+  );
+    ul li{
+      transition: 400ms;
+    }
+    .navbar-nav {
+      padding-top: 0 !important;
+      .nav-link {
+        font-size: 0.90rem !important;
+      transition: 400ms;
+    }
+  }
+    .navbar-brand img {
+      width: 180px;
+      transition: 400ms;
+    }
+  }
+}
+
+// Home Section
 .home__section {
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -268,86 +303,6 @@ body {
 }
 
 // Form
-form {
-  h4 {
-    font-size: 39px;
-    font-weight: 600;
-    margin: 0 0 20px 0;
-  }
-  .inputArea {
-    font-size: 18px;
-    padding: 10px 20px;
-    margin: 0 0 5px 0;
-    border-style: solid;
-    border-radius: 5px;
-    box-shadow: 0 20px 20px 0 rgb(0 2 51 / 10%);
-  }
-  .submitBtn {
-    background-color: #08086c;
-    margin: 5px 185px 0 0;
-    font-size: 1.1rem;
-    color: #fff;
-  }
-  .middleInput {
-    padding-top: 11px;
-    padding-bottom: 11px;
-  }
-}
-
-// FAQ
-.FAQ {
-  display: inline-flex;
-  flex-direction: column;
-  border: none;
-  // background-color: #f5f5f5;
-  .faqText {
-    background-color: #ddd;
-    color: #000;
-    border-radius: 10px;
-    font-size: 1.15rem;
-    font-weight: 600;
-    padding: 20px;
-    text-decoration: none;
-    width: 100%;
-    border: inherit;
-    border-color: #000;
-    &:hover {
-      color: rgb(13, 26, 209);
-    }
-    .faqSpanText {
-      font-size: 0.95rem;
-      color: rgb(82, 79, 79);
-    }
-  }
-
-  .btn {
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  h4 {
-    font-size: 36px;
-    font-weight: 600;
-    padding: 15px;
-  }
-  .card-header {
-    margin: 0 0 -15px;
-    padding: 0.25rem 0;
-    background-color: #f5f5f5;
-  }
-}
-.whyUs {
-  background-color: #f5f5f5;
-  padding: 3rem 4rem 5rem;
-  .whyus_container {
-    h3 {
-      font-size: 3rem;
-      font-weight: 600;
-      text-align: center;
-    }
-  }
-}
-
 .contact_section {
   background-color: #f5f5f5;
   padding: 3rem 0 5rem;
@@ -407,7 +362,19 @@ form {
         font-size: 1.2rem;
         font-weight: 400;
         &:hover {
-          opacity: 0.9;
+          color: #000;
+          background-color: #c7a84d;
+        }
+      }
+      .successMsg{
+        background-color: hsl(150, 100%, 24%)!important;
+        border-radius: 5px;
+        padding: 0.5em;
+        display: none;
+        p{
+          margin-top: 0;
+          margin-bottom: 0rem;
+          color: #fff;
         }
       }
     }
@@ -433,14 +400,15 @@ form {
   }
 }
 
-// Responsive Css
+// Responsive Css for Phones
 @media only screen and(max-width:900px) {
   .nav__menu_dt {
-    padding: 0;
+    padding: 0 10px 0 12px;
     img {
       height: auto;
-      width: 150px;
-      margin-left: 10px;
+      width: 125px;
+      margin-left: 5px;
+      padding-top: 5px;
     }
 
     .navbar-nav .nav-link {
@@ -456,7 +424,7 @@ form {
     }
     .cta {
       .cta_btn {
-        color: #fff !important;
+        color: #fed049 !important;
         background-color: transparent;
         box-shadow: none;
         border-radius: 0;
@@ -465,6 +433,23 @@ form {
         margin-left: 1rem;
       }
     }
+  }
+
+  .sticky{
+    .nav__menu_dt{
+      .navbar-brand{
+        img{
+          width: 130px;
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+  .active {
+    color: #43ce6b !important;
+    background-color: transparent !important;
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem;
   }
 
   .form__background {

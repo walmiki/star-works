@@ -1,25 +1,32 @@
-// $(document).ready(function(){
-//     $(window).scroll(function(){
-//         var scroll = $(window).scrollTop();
-//         if (scroll > 300) {
-//           $(".black").css("background" , "blue");
-//         }
+// Sticky Nav
+window.addEventListener("scroll", function () {
+	var nav = document.querySelector("header");
+	nav.classList.toggle("sticky", window.scrollY >= 50);
+});
 
-//         else{
-//             $(".black").css("background" , "#333");
-//         }
-//     })
-//   });
+// Toaster msg
+let button = document.getElementById("submitBtn");
+let msg = document.getElementById("successMsg");
 
-// var myNav = document.getElementsByClassName("nave__div");
-// window.onscroll = function () {
-//   "use strict";
-//   if (document.body.scrollTop >= 200) {
-//       myNav.style.
-//     myNav.classList.add("");
-//     myNav.classList.remove("nav-transparent");
-//   } else {
-//     myNav.classList.add("nav-transparent");
-//     myNav.classList.remove("nav-colored");
-//   }
-// };
+button.addEventListener("click", (e) => {
+	e.preventDefault();
+	msg.style.display = "block";
+	setTimeout((e) => {
+		msg.style.display = "none";
+	}, 3500);
+});
+
+//  Whatsapp
+$(function () {
+	$("#myButton").floatingWhatsApp({
+		phone: "917066299276",
+		popupMessage: "Hello, how can we help you?",
+		message: "Can we connect?",
+		showPopup: true,
+		showOnIE: false,
+		headerTitle: "Welcome!",
+		headerColor: "rgb(37,211,102)",
+		backgroundColor: "rgb(37,211,102)",
+		buttonImage: '<img src="./assets/images/whatsapp/whatsapp.svg" />',
+	});
+});

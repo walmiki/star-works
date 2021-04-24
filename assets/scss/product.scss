@@ -4,9 +4,12 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+header {
+  position: absolute;
+  z-index: 1;
+}
 .nave__div {
-  // position: absolute;
-  // width: 100%;
   position: fixed;
   width: 100%;
   top: 0;
@@ -65,6 +68,35 @@ body {
     &:hover {
       color: #fff !important;
       background-color: #fed049 !important;
+    }
+  }
+}
+
+// Sticky Nav
+.sticky {
+  .nav__menu_dt {
+    transition: 400ms;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      170deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 95%,
+      rgba(9, 9, 121, 1) 100%
+    );
+
+    ul li {
+      transition: 400ms;
+    }
+    .navbar-nav {
+      padding-top: 0 !important;
+      .nav-link {
+        font-size: 0.9rem !important;
+        transition: 400ms;
+      }
+    }
+    .navbar-brand img {
+      width: 180px;
+      transition: 400ms;
     }
   }
 }
@@ -146,7 +178,7 @@ body {
     font-size: 38px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   .column {
     .gallery {
@@ -233,18 +265,33 @@ body {
     }
     .cta {
       .cta_btn {
-        background-color: #fed049;
-        box-shadow: 0 20px 20px 0 rgb(0 2 51 / 30%);
-        color: #000 !important;
-        padding: 6px 17px 6px !important;
-        border-radius: 71px;
-        &:hover {
-          color: #fff !important;
-          background-color: #fed049 !important;
-          opacity: 0.75;
+        color: #fed049 !important;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        font-size: 1rem !important;
+        padding: 15px !important;
+        margin-left: 1rem;
+      }
+      }
+    }
+
+  .sticky {
+    .nav__menu_dt {
+      .navbar-brand {
+        img {
+          width: 130px;
+          padding-bottom: 0.5rem;
         }
       }
     }
+  }
+
+  .active {
+    color: #43ce6b !important;
+    background-color: transparent !important;
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem;
   }
 
   .form__background {
