@@ -1,7 +1,7 @@
 // Sticky Nav
 window.addEventListener("scroll", function () {
 	var nav = document.querySelector("header");
-	nav.classList.toggle("sticky", window.scrollY >= 50);
+	nav.classList.toggle("responsive__header", window.scrollY >= 50);
 });
 
 // Toaster msg

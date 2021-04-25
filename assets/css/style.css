@@ -26,9 +26,10 @@ header {
 }
 
 .active {
-  color: #000 !important;
-  background-color: #43ce6b;
-  border-radius: 20px;
+  color: #fed049 !important;
+  border-radius: 40px;
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
   padding: 0.5rem 1.2rem;
 }
 
@@ -42,7 +43,7 @@ header {
   padding-right: 4.1rem;
 }
 .nav__menu_dt ul li {
-  padding-right: 1.5rem;
+  padding-right: 1.3rem;
 }
 .nav__menu_dt .navbar-nav .nav-link {
   color: #fff;
@@ -139,6 +140,9 @@ header {
   padding: 4px 17px 6px;
   border-radius: 71px;
 }
+.home__section .home__banner .image_div {
+  margin-top: -20%;
+}
 .home__section .home__banner img {
   border-radius: 10px;
 }
@@ -172,7 +176,7 @@ header {
   text-align: center;
 }
 .about__section .about__sectionContent .row {
-  margin: 3rem 17rem 0 !important;
+  margin: 3rem 6rem 0 !important;
 }
 .about__section .about__sectionContent .row .card_review {
   box-sizing: border-box;
@@ -230,6 +234,9 @@ header {
   font-size: 18px;
   color: #524f4f;
 }
+.whychooseus .right__feature {
+  padding-left: 2rem;
+}
 .whychooseus .right__feature p {
   font-size: 1.1rem;
   font-weight: 500;
@@ -275,6 +282,9 @@ header {
 }
 .footer__section .cont_of ul {
   margin-left: -38px;
+}
+.footer__section .cont_of p {
+  width: 22rem;
 }
 
 .column {
@@ -440,12 +450,6 @@ header {
     font-size: 1.5rem;
     width: 300px;
     margin: 50px 0 0;
-  }
-  .home__section .home__banner img {
-    height: auto;
-    width: 185px;
-    margin: 10px 0 0 125px;
-    visibility: hidden;
   }
   .home__section .home__banner .col-lg-8 {
     position: static;

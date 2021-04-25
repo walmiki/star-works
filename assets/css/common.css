@@ -1,0 +1,246 @@
+.nave__div.scrolled {
+  background-color: #000 !important;
+  transition: background-color 200ms linear;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.nav-colored {
+  background-color: #000;
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
+.responsive__header .nav__menu_dt {
+  transition: 400ms;
+  background: #020024;
+  background: linear-gradient(170deg, #020024 0%, #090979 95%, #090979 100%);
+}
+.responsive__header .nav__menu_dt ul li {
+  transition: 400ms;
+}
+.responsive__header .nav__menu_dt .navbar-nav {
+  padding-top: 0 !important;
+}
+.responsive__header .nav__menu_dt .navbar-nav .nav-link {
+  font-size: 0.9rem !important;
+  transition: 400ms;
+}
+.responsive__header .nav__menu_dt .navbar-brand img {
+  width: 180px;
+  transition: 400ms;
+}
+
+.row2 {
+  padding: 1rem 4.1rem 4rem;
+}
+.row2 .map__desc {
+  padding: 2.5rem;
+}
+.row2 .map__desc p {
+  max-width: 28rem;
+  color: #6c757d !important;
+}
+.row2 .map__desc ul {
+  text-decoration: none;
+  list-style: none;
+  margin-left: -39px;
+}
+.row2 .map__desc ul p {
+  margin-bottom: 0;
+  color: #6c757d !important;
+}
+.row2 iframe {
+  box-shadow: rgba(0, 23, 55, 0.1) 0px 24px 60px 0px !important;
+}
+
+.floating-wpp .floating-wpp-button img,
+.floating-wpp .floating-wpp-button svg {
+  transform: none !important;
+  transition: none !important;
+}
+
+.ourProduct {
+  background-color: rgba(196, 196, 196, 0.17);
+  padding: 7rem 4.1rem 3rem 4.1rem;
+}
+.ourProduct .product__row .seeMore {
+  width: 100%;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.ourProduct .product__row .seeMore a {
+  color: #5050f2 !important;
+  text-decoration: none;
+}
+.ourProduct .product__row .seeMore a:hover {
+  opacity: 0.7;
+}
+.ourProduct .product__row h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.ourProduct .product__row .row__posters {
+  padding-left: 1rem;
+}
+.ourProduct .product__row img {
+  width: 250px;
+  object-fit: contain;
+  margin-right: 1rem;
+  border-radius: 5px;
+  background-color: rgba(196, 196, 196, 0.17);
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .nav__menu_dt {
+    padding: 0 10px 0 12px;
+  }
+
+  .ourProduct {
+    padding: 2rem;
+    text-align: center;
+  }
+  .ourProduct .product__row h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .ourProduct .product__row img {
+    margin-bottom: 1rem;
+  }
+  .ourProduct .product__row .row__posterLarge_none {
+    display: none;
+  }
+
+  .row2 {
+    padding: 1.4rem;
+  }
+  .row2 iframe {
+    width: 370px !important;
+    height: 370px !important;
+  }
+
+  .image_div {
+    display: flex !important;
+    margin: 0 !important;
+    justify-content: center !important;
+  }
+
+  .home__section .home__banner h1,
+.home__section .home__banner p {
+    text-align: center !important;
+  }
+  .home__section .home__banner a {
+    display: none;
+  }
+
+  .md_none {
+    display: none !important;
+  }
+
+  .jumbotron__section h2 {
+    display: none;
+  }
+
+  .home__section .home__banner .col-lg-8 {
+    padding: 0 !important;
+  }
+  .home__section .home__banner .col-lg-8 h1 {
+    width: 100%;
+    font-size: 2.5rem !important;
+  }
+
+  .home__section .home__banner img {
+    border-radius: 10px;
+    width: 301px;
+    margin-top: -88px;
+  }
+
+  .about__section .about__sectionContent .row .card_review {
+    margin-top: 17px !important;
+  }
+
+  .features__section p {
+    width: 99% !important;
+  }
+  .features__section .col-lg-3 {
+    padding: 1.2rem !important;
+  }
+
+  .contact_section {
+    padding-bottom: 0 !important;
+  }
+  .contact_section .contact_div {
+    margin-bottom: 0 !important;
+  }
+
+  .prod_page h1 {
+    margin-top: 35px !important;
+    width: auto !important;
+  }
+
+  .md_none {
+    display: block !important;
+    order: 2;
+    margin-top: -145px !important;
+  }
+
+  h1 {
+    margin-top: 35px !important;
+    width: auto !important;
+  }
+}
+img,
+svg {
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+  -webkit-transition: 0.3s ease-in-out !important;
+  transition: 0.3s ease-in-out !important;
+}
+img:hover,
+svg:hover {
+  -webkit-transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
+}
+
+.profile_img img {
+  transform: none !important;
+  padding: 10px 3rem !important;
+}
+
+.about_us img,
+.about_us svg {
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+  -webkit-transition: 0.3s ease-in-out !important;
+  transition: 0.3s ease-in-out !important;
+}
+.about_us img:hover,
+.about_us svg:hover {
+  -webkit-transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
+}
+
+.responsive__header .nav__menu_dt .navbar-brand img {
+  transition: none !important;
+  transform: none !important;
+}
+
+/*# sourceMappingURL=common.css.map */
