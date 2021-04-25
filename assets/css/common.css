@@ -105,6 +105,19 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+  .form__background {
+    background: #020024;
+    background: linear-gradient(170deg, #020024 0%, #090979 100%, #090979 100%);
+  }
+
+  .nav__menu_dt ul {
+    width: 100%;
+  }
+  .nav__menu_dt ul li {
+    padding-right: 1.3rem;
+    width: 100%;
+  }
+
   html {
     overflow-x: hidden;
   }
@@ -127,6 +140,10 @@ body {
   }
   .ourProduct .product__row .row__posterLarge_none {
     display: none;
+  }
+
+  .home__section .home__banner h1 {
+    font-size: 2rem !important;
   }
 
   .row2 {

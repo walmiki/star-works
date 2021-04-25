@@ -109,6 +109,22 @@ body {
 	}
 }
 @media only screen and(max-width:900px) {
+	.form__background {
+		background: rgb(2, 0, 36);
+		background: linear-gradient(
+			170deg,
+			rgba(2, 0, 36, 1) 0%,
+			rgba(9, 9, 121, 1) 100%,
+			rgba(9, 9, 121, 1) 100%
+		);
+	}
+	.nav__menu_dt ul {
+		width: 100%;
+		li {
+			padding-right: 1.3rem;
+			width: 100%;
+		}
+	}
 	html {
 		overflow-x: hidden;
 	}
@@ -133,6 +149,9 @@ body {
 				display: none;
 			}
 		}
+	}
+	.home__section .home__banner h1 {
+		font-size: 2rem !important;
 	}
 	.row2 {
 		padding: 1.4rem;
