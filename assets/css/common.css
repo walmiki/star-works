@@ -143,6 +143,10 @@ body {
     justify-content: center !important;
   }
 
+  .row2 .map__desc {
+    order: 2;
+  }
+
   .home__section .home__banner h1,
 .home__section .home__banner p {
     text-align: center !important;
