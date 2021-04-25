@@ -19,7 +19,7 @@ button.addEventListener("click", (e) => {
 //  Whatsapp
 $(function () {
 	$("#myButton").floatingWhatsApp({
-		phone: "917066299276",
+		phone: "919867172664",
 		popupMessage: "Hello, how can we help you?",
 		message: "Can we connect?",
 		showPopup: true,
