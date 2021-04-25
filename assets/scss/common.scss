@@ -149,13 +149,16 @@ body {
 	.row2 .map__desc {
 		order: 2;
 	}
-	.home__section .home__banner {
-		h1,
-		p {
-			text-align: center !important;
-		}
-		a {
-			display: none;
+	.home__section {
+		height: 80vh !important;
+		.home__banner {
+			h1,
+			p {
+				text-align: center !important;
+			}
+			a {
+				display: none;
+			}
 		}
 	}
 	.md_none {

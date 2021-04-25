@@ -147,6 +147,9 @@ body {
     order: 2;
   }
 
+  .home__section {
+    height: 80vh !important;
+  }
   .home__section .home__banner h1,
 .home__section .home__banner p {
     text-align: center !important;
